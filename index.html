@@ -42,7 +42,18 @@
                         <input type="file" id="filePassengers" name="filePassengers" accept=".csv">
                         <br/>
                         <input type="button" id="buttonSend"value = "SEND" onclick="sendData()" class="roundedInput"/>
-                    </div>
+                </div>
         </section>
+        <table class ="roundedInput" id="tableResults">
+            <thead>
+                <tr>
+                  <th>Survived</th>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyResults">
+
+              </tbody>
+        </table>
     </body>
 </html>

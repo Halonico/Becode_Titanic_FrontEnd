@@ -61,7 +61,8 @@ function sendData() {
             .then(response =>
                 response.json())
             .then(data => {
-                predictions = JSON.parse(data);
+                console.log(data);
+                predictions = JSON.parse(data.predictions);
                 generateTable();
             });
             return;
@@ -76,8 +77,8 @@ function sendData() {
         .then(response =>
             response.json())
         .then(data => {
-            console.log("PASSE PAR FICHIER")
-            predictions = JSON.parse(data);
+            console.log(data);
+            predictions = JSON.parse(data.predictions);
             generateTable();
         });
 }
